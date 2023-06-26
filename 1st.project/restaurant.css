@@ -1,0 +1,150 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+/* navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* logo and image */
+#ligo{
+    margin: 10px 34px;
+}
+#logo img{
+    height: 70px;
+    margin: 30px 45px;
+}
+/* list styling */
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3em;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height:540px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(photos/background.jpg) no-repeat center center/cover;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .70;
+}
+#home h1{
+    color:rgb(240, 248, 247);
+    text-shadow: rgb(241, 245, 1) 15px -24px 20px;
+
+
+    text-align: center;
+}
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* services section */
+#services{
+    margin: 34px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: #f2f2f2;
+}
+#services .box img{
+    height: 160px;
+    display: block;
+    margin: auto;
+}
+#services{}
+#services{}
+/* clients section */
+#clients-section{
+    height: 344px;
+    position: relative;
+}
+#clients-section::before{
+    content: "";
+    position: absolute;
+    background: url(photos/white-veg.jpg);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.83;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 34px;
+}
+#clients img{
+    height: 124px;
+}
+/* utillity classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+h-secondary{
+    font-size: 2.3rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: black ;
+    margin: 100px 17px 17px 17px;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 10px;
+
+}
+.center{
+    text-align: center;
+}
